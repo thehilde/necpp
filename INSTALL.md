@@ -15,19 +15,23 @@ install these with the following command.
 
   1. Install the autoconf and libtool packages.
      On Debian this is done with
+     
     `aptitude install automake autoconf libtool'
-     on other systems you will have to find the appropriate way to do this.
+   on other systems you will have to find the appropriate way to do this.
 
   3. Cenerate the ./configure script. To do this, type
+
     `make -f Makefile.git'
 
-  4. Then do the usual thing
-     ./configure --without-lapack
+  5. Then do the usual thing
+
+    ./configure --without-lapack
      make -j 4
      sudo make install
 
-  5. To use LAPACK, you should install the appropriate atlas system
+  6. To use LAPACK, you should install the appropriate atlas system
      aptitude install libatlas-base-dev. And then to the usual thing, i.e.,
+     
     ./configure 
     make -j 4
     sudo make install
